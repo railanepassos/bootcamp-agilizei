@@ -38,6 +38,10 @@ context('Cadastro', () => {
     cy.get('select#daybox').select('13')
     cy.get('input#firstpassword').type('Javascript-99')
     cy.get('input#secondpassword').type('Javascript-99')
+
+    //  O comando .attachFile é habilitado através do plugin cypress-file-upload e realiza o upload do arquivo a partir do browser sem interação com o sistema operacional
+    cy.get('input#imagesrc').attachFile('foto-perfil.jpeg')
+
     cy.get('button#submitbtn').click()
     //  cy.get('button#Button1').click()
   })

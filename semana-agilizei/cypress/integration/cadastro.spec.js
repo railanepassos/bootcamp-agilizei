@@ -62,7 +62,7 @@ context('Cadastro', () => {
 
     cy.get('button#submitbtn').click()
     //  cy.get('button#Button1').click()
-    /*
+
     cy.wait('@getNewTable').then(resGetNewTable => {
       // Asserções são feitas com os comando shold ou expect que faz parte da inplementação do Chai.js
       expect(resGetNewTable.status).to.eq(200)
@@ -73,7 +73,6 @@ context('Cadastro', () => {
     cy.wait('@postNewUser').then(resPostNewUser => {
       expect(resPostNewUser.status).to.eq(200)
     })
-*/
-    //cy.url().should('/WebTable')
+    cy.url().should('contain', 'WebTable')
   })
 })

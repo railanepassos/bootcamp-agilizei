@@ -105,3 +105,5 @@ dist
 
 # Archives MAC
 .DS_Store
+semana-agilizei/cypress/screenshots/cadastro.spec.js/
+semana-agilizei/cypress/videos/

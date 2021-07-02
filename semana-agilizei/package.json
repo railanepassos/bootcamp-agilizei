@@ -18,7 +18,7 @@
     "cypress-file-upload": "^5.0.8"
   },
   "cypress-cucumber-preprocessor": {
-    "noGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true
   },
   "dependencies": {}
 }

@@ -12,10 +12,16 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 
+// Importando o cypress p/ o projeto
+const cucumber = require('cypress-cucumber-preprocessor').default
+
 /**
  * @type {Cypress.PluginConfig}
  */
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
+
+  // Processar minhas features para uma linguagem que o cypress possa entender
+  on('file:preprocessor', cucumber())
 }

@@ -1,0 +1,8 @@
+{
+  "comment": {
+    "sobre-esse-arquivo": "Esse aquivo tras configurações especificas para o cucumber e também permite que ao executar o comando de execução de testes arquivos spec e arquivos fetures sejam reconhecidos para teste. Isso é possivel pois a parametro testFile está em um arquivo separado e não dentro de cypress.json",
+    "testFiles": "Essa chave permite que o cypress reconheça esse arquivos de feature como testes a serem executados"
+
+  },
+  "testFiles": "**/*.feature"
+}

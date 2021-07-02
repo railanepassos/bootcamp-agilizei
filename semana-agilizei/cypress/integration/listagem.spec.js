@@ -9,7 +9,7 @@ context('Listagem', () => {
       method: 'GET',
       url: '**/api/1/databases/userdetails/collections/newtable?**',
       status: 200,
-      response: []
+      response: 'fx:webtable-get-empty'
     }).as('getNewTable')
 
     cy.visit('/WebTable.html')
@@ -23,18 +23,7 @@ context('Listagem', () => {
       method: 'GET',
       url: '**/api/1/databases/userdetails/collections/newtable?**',
       status: 200,
-      response: [
-        {
-          _id: {
-            $oid: '5bbcad731f6e4f0840a1b062'
-          },
-          FirstName: 'Leanne',
-          LastName: 'Graham',
-          Email: 'Sincere@april.biz',
-          Phone: '0106926593',
-          Gender: 'Male'
-        }
-      ]
+      response: 'fx:webtable-get-only'
     }).as('getNewTable')
 
     cy.visit('/WebTable.html')
@@ -43,6 +32,6 @@ context('Listagem', () => {
       .eq(4)
       .find('div')
       .as('gridCellPhone')
-    cy.get('@gridCellPhone').should('contain', '0106926593 ')
+    cy.get('@gridCellPhone').should('contain', '0106926593')
   })
 })

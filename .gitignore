@@ -107,3 +107,6 @@ dist
 .DS_Store
 semana-agilizei/cypress/screenshots/
 semana-agilizei/cypress/videos/
+semana-agilizei/cypress/reports/cucumber_report.html
+semana-agilizei/cypress/reports/cucumber-json/Cadastro.cucumber.json
+.gitignore

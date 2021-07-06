@@ -4,7 +4,7 @@
     "testFiles": "Essa chave permite que o cypress reconheça esse arquivos de feature como testes a serem executados"
 
   },
-  "testFiles": "**/*.feature",
+  "testFiles": "**/*.{feature,features}",
   "$schema": "https://raw.githubusercontent.com/cypress-io/cypress/develop/cli/schema/cypress.schema.json",
   "baseUrl": "http://demo.automationtesting.in",
   "experimentalSourceRewriting": true,

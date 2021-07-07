@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -19,7 +19,7 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    
+
     strategy:
       matrix:
         node-version: [14.x]
@@ -28,27 +28,26 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
+
       # Setup Node.js
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.2.0
         with:
           node-version: ${{ matrix.node-version }}
-          
-      # Install dependencies    
+
+      # Install dependencies
       - run: npm install
-      
+
       # Test execution
       - run: npm run cy:run:cucumber
-      
+
       # Generate report
       - run: npm run report:run
-      
+
       # Publish in GithubPages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: semana-agilizei/cypress/reports
-
+          FOLDER: cypress/reports

@@ -6,7 +6,7 @@ cypress/screenshots/
 cypress/videos/
 
 # relatorios mocha
-mochawersome-reports
+mochawesome-report
 
 # relatorios cucumber
 cypress/reports/index.html
@@ -15,3 +15,4 @@ cypress/reports/cucumber-json/**
 
 # arquivos de dependencias do projeto
 node_modules
+package-lock.json

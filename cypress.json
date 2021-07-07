@@ -1,15 +1,15 @@
 {
   "comments": {
     "sobre-esse-arquivo": "Esse arquivo deve especificar algumas configurações como url, dimencionamento de telas, timeouts e até comandos personalizados.",
-    "chave-schema": "A chave $schema libera algumas outras propiredades através do comando combinando as teclas control + espaço"
-
+    "chave-schema": "A chave $schema libera algumas outras propiredades através do comando combinando as teclas control + espaço",
+    "testFiles": "**/*.*spec.*"
 
   },
   "$schema": "https://raw.githubusercontent.com/cypress-io/cypress/develop/cli/schema/cypress.schema.json",
   "baseUrl": "http://demo.automationtesting.in",
-  "experimentalSourceRewriting": true,
+  "experimentalSourceRewriting": false,
   "watchForFileChanges": false,
-  "testFiles": "**/*.*spec.*",
+  "testFiles": "**/*.feature*",
   "reporter": "cypress-multi-reporters",
   "reporterOptions": {
     "configFile": "reporter-config.json"

@@ -42,7 +42,7 @@ jobs:
       - run: npm run cy:run:cucumber
       
       # Generate report
-      - run: npm run report:run
+      - run: npm run report:cucumber
       
       # Publish in GithubPages
       - name: Deploy to GitHub Pages

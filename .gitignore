@@ -2,16 +2,16 @@
 .DS_Store
 
 # screamshots e videos
-semana-agilizei/cypress/screenshots/
-semana-agilizei/cypress/videos/
+cypress/screenshots/
+cypress/videos/
 
 # relatorios mocha
-semana-agilizei/mochawersome-reports
+mochawersome-reports
 
 # relatorios cucumber
-semana-agilizei/cypress/reports/index.html
-semana-agilizei/cypress/reports/index.html.json
-semana-agilizei/cypress/reports/cucumber-json/**
+cypress/reports/index.html
+cypress/reports/index.html.json
+cypress/reports/cucumber-json/**
 
 # arquivos de dependencias do projeto
-semana-agilizei/node_modules/
+node_modules

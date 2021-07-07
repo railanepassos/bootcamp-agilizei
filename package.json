@@ -36,7 +36,6 @@
       "outputFolder": "cypress/reports/cucumber-json",
       "filePrefix": "",
       "fileSuffix": ".cucumber"
-    
     }
   },
   "dependencies": {}
